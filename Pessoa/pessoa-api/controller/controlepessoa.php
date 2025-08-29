@@ -12,7 +12,6 @@ class ControlePessoa {
     }
 
     public function criarPessoa($nome, $cpf, $telefone) {
-        // Validação simples
         if (empty($nome) || empty($cpf) || empty($telefone)) {
             return "Todos os campos são obrigatórios!";
         }
@@ -34,7 +33,6 @@ class ControlePessoa {
     }
 
     public function atualizarPessoa($nome, $cpf, $telefone) {
-        // Validar e atualizar pessoa
         $pessoa = new Pessoa();
         $pessoa->setNome($nome);
         $pessoa->setCpf($cpf);
@@ -56,3 +54,4 @@ class ControlePessoa {
     }
 }
 ?>
+
